@@ -1,6 +1,6 @@
 {
   "name": "@safetyculture/bcp47",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse bcp-47 locale language tags ",
   "main": "dist/index.js",
   "repository": "https://github.com/SafetyCulture/bcp47.git",
