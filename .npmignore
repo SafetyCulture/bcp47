@@ -1,6 +1,7 @@
 .editorconfig
 /.idea/
+/.buildkite/
 /*.tgz
-/.travis.yml
+.eslintrc
 /out/
 /coverage/
