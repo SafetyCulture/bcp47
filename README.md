@@ -14,11 +14,9 @@ Helpful resources:
 $ npm i @safetyculture/bcp47 --save
 ```
 
-## Setting up Strowger service url
+## Importing
 ```js
-import bcp47 from 'bcp47');
-const bcp = bcp47();
-bcp.validate('en-US');
+import {validate, pattern} from 'bcp47';
 ```
 
 # Properties
@@ -26,8 +24,21 @@ bcp.validate('en-US');
 ## pattern
 A regular expression for validating locale strings
 
+```js
+// use with third party validation tools
+Joi.string().regex(pattern)
+
+// or just regex
+pattern.test(locale);
+```
+
 # Methods
 
 ## validate(`locale`) => Boolean
 Validate a given locale string.
 - `locale`. Example `en-US`
+
+```js
+validate('en-US'); // true
+validate('en_US'); // false
+```
