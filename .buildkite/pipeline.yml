@@ -1,0 +1,9 @@
+# .buildkite/pipeline.yml
+
+env:
+
+steps:
+  - name: "Build & Test"
+    command: "sh .buildkite/buildkite-test.sh"
+    agents:
+      node: "true"

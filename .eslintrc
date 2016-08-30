@@ -1,0 +1,11 @@
+// Add our overrides as necessary
+{
+  "extends": "airbnb",
+  "rules": {
+    "max-len": [2, 120, 2],  // Maximum line length, airbnb defaults to 100: [severity, max char count, tabWidth]
+    "comma-dangle": [2, "never"], // airbnb defaults to always require dangling commas. DO NOT WANT
+    "arrow-body-style": [2, "always"], // http://eslint.org/docs/rules/arrow-body-style airbnb default is 'as-needed' which is problematic
+    "object-curly-spacing": 0, // The default WebStorm is without spaces around curlies. SC code is like that in general.
+    "new-cap": 0 // Some factory functions can be capital cased.
+  }
+}
