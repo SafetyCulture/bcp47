@@ -1,6 +1,6 @@
 {
   "name": "bcp47-validate",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Simple validator for BCP47 locale tags ",
   "keywords": [
     "bcp47",
