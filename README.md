@@ -1,4 +1,8 @@
 # bcp47
+
+[![Build Status](https://travis-ci.org/SafetyCulture/bcp47.svg?branch=master)](https://travis-ci.org/SafetyCulture/bcp47)
+[![Coverage Status](https://coveralls.io/repos/github/SafetyCulture/bcp47/badge.svg)](https://coveralls.io/github/SafetyCulture/bcp47)
+
 Simple validator for BCP47 locale tags
 
 Helpful resources: 

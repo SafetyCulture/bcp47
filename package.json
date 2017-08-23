@@ -2,6 +2,14 @@
   "name": "bcp47-validate",
   "version": "1.0.1",
   "description": "Simple validator for BCP47 locale tags ",
+  "keywords": [
+    "bcp47",
+    "bcp-47",
+    "locale",
+    "language",
+    "validate",
+    "validator"
+  ],
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": "https://github.com/SafetyCulture/bcp47.git",
