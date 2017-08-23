@@ -17,7 +17,7 @@
     "test": "NODE_ENV=test LOG_LEVEL=fatal mocha --recursive --compilers js:babel-register --reporter $npm_package_config_reporter -s 120 $npm_package_config_test_opts",
     "cov": "npm run cov:html",
     "cov:html": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal istanbul --include-all-sources cover -i '**/src/**' --report html ./node_modules/.bin/_mocha -- --recursive --compilers js:babel-register && open coverage/index.html",
-    "cov:coveralls": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal istanbul --include-all-sources cover -i '**/src/**' --report lcovonly ./node_modules/.bin/_mocha -- --recursive --compilers js:babel-register && open coverage/index.html && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "cov:coveralls": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --compilers js:babel-register --recursive  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint ./src/ ./test/ && echo Lint OK",
     "compile": "babel src --out-dir dist --source-maps true",
     "compile:watch": "babel src --out-dir dist --source-maps true --watch",
