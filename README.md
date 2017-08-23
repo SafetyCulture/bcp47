@@ -1,11 +1,14 @@
 # bcp47
-Module for interacting with bcp-47 locale language tags
-[![Build status](https://badge.buildkite.com/3bdd7b8c474a53b120d71ee9472042042659359be492bb5bfe.svg)](https://buildkite.com/safetyculture/bcp47)
+
+[![Build Status](https://travis-ci.org/SafetyCulture/bcp47.svg?branch=master)](https://travis-ci.org/SafetyCulture/bcp47)
+[![Coverage Status](https://coveralls.io/repos/github/SafetyCulture/bcp47/badge.svg)](https://coveralls.io/github/SafetyCulture/bcp47)
+
+Simple validator for BCP47 locale tags
 
 Helpful resources: 
-    - http://www.w3.org/International/questions/qa-choosing-language-tags
-    - https://tools.ietf.org/html/bcp47
-    - http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+* http://www.w3.org/International/questions/qa-choosing-language-tags
+* https://tools.ietf.org/html/bcp47
+* http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 
 # Usage
 
