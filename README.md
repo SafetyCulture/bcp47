@@ -1,11 +1,10 @@
 # bcp47
-Module for interacting with bcp-47 locale language tags
-[![Build status](https://badge.buildkite.com/3bdd7b8c474a53b120d71ee9472042042659359be492bb5bfe.svg)](https://buildkite.com/safetyculture/bcp47)
+Simple validator for BCP47 locale tags
 
 Helpful resources: 
-    - http://www.w3.org/International/questions/qa-choosing-language-tags
-    - https://tools.ietf.org/html/bcp47
-    - http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+* http://www.w3.org/International/questions/qa-choosing-language-tags
+* https://tools.ietf.org/html/bcp47
+* http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 
 # Usage
 
