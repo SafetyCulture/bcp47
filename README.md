@@ -1,4 +1,4 @@
-# bcp47
+# bcp47-validate
 
 [![Build Status](https://travis-ci.org/SafetyCulture/bcp47.svg?branch=master)](https://travis-ci.org/SafetyCulture/bcp47)
 [![Coverage Status](https://coveralls.io/repos/github/SafetyCulture/bcp47/badge.svg)](https://coveralls.io/github/SafetyCulture/bcp47)
@@ -14,12 +14,12 @@ Helpful resources:
 
 ## Install
 ```sh
-$ npm i @safetyculture/bcp47 --save
+$ npm i bcp47-validate --save
 ```
 
 ## Importing
 ```js
-import {validate, pattern} from 'bcp47';
+import {validate, pattern} from 'bcp47-validate';
 ```
 
 # Properties
