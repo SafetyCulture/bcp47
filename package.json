@@ -12,6 +12,7 @@
   ],
   "license": "Apache-2.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/SafetyCulture/bcp47.git",
   "scripts": {
     "test": "NODE_ENV=test LOG_LEVEL=fatal mocha --recursive --compilers js:babel-register --reporter $npm_package_config_reporter -s 120 $npm_package_config_test_opts",
@@ -27,8 +28,9 @@
     "audit": "nsp check",
     "check": "npm run audit && npm run deps && npm outdated --depth 0",
     "clean": "rm -rf node_modules/ && rm -rf coverage",
-    "prepublish": "npm run compile && npm test",
-    "pretest": "npm run lint"
+    "prepublish": "npm run compile && npm run copy-typescript && npm test",
+    "pretest": "npm run lint",
+    "copy-typescript": "ncp src/index.d.ts dist/index.d.ts"
   },
   "author": "(C) 2017 SafetyCulture Pty Ltd",
   "config": {
@@ -52,6 +54,7 @@
     "istanbul": "^1.0.0-alpha.2",
     "lodash": "^4.15.0",
     "mocha": "^2.5.3",
+    "ncp": "^2.0.0",
     "nock": "^8.0.0",
     "nsp": "^2.5.0"
   },
